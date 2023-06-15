@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing speed</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="main">
+        <p id="timehide">Time: <span id="time"><select id="Toptions" onchange={selecttime()}>
+            <option value=1 selected>1m</option>
+            <option value=2>2m</option>
+            <option value=5>5m</option>
+        </select></span></p>
+        <p>Timer:<span id="timer">0</span></p>
+        <p>Mistakes:<span id="mistake">0</span></p>
+    </div>
+    
+    <div class="randomtext" id="textid" onmousedown="return false" onselectstart="return false"></div>
+    <textarea id="textinput" rows="3" placeholder="Type Here....."></textarea>
+    <button id="stbtn"> start button</button>
+    <button id="spbtn"> stop button</button>
+
+    <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+            <p>Accuracy: <span id="accuracy">
+            </span></p>
+            <p>Speed: <span id="speed">
+            </span></p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
