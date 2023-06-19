@@ -1,5 +1,5 @@
 //randomtext
-const text = ["I won't close down a business of subnormal profitability merely to add a fraction of a point to our corporate returns. I also feel it inappropriate for even an exceptionally profitable company to fund an operation once it appears to have unending losses in prospect. Adam Smith would disagree with my first proposition and Karl Marx would disagree with my second; the middle ground is the only position that leaves me comfortable", 
+const textap = ["I won't close down a business of subnormal profitability merely to add a fraction of a point to our corporate returns. I also feel it inappropriate for even an exceptionally profitable company to fund an operation once it appears to have unending losses in prospect. Adam Smith would disagree with my first proposition and Karl Marx would disagree with my second; the middle ground is the only position that leaves me comfortable", 
 "Lorem ipsum dolor sit amet consectetur adipisicing elit.quisquam ab asperiores voluptatum modi dolore.Omnis possimus culpa, sapiente est nihil magni eveniet harum dicta nobis placeat facere non iusto dolorem quidem minima veniam autem aliquid dignissimos quo deserunt.Ipsum necessitatibus something  Nobis officia odit incidunt odio eveniet necessitatibus, ducimus illum cum! Facilis vel molestiae ratione architecto nam deleniti mollitia cupiditate iure tempore, necessitatibus voluptas ",
 "quia suscipit nobis ratione obcaecati odit.Veritatis,voluptas hic temporibus debitis inventore enim placeat! Nobis officia odit incidunt odio eveniet necessitatibus, ducimus illum cum! Facilis vel molestiae ratione architecto nam deleniti mollitia cupiditate iure tempore, necessitatibus voluptas harum tenetur ab.Error laudantium est veniam amet modi velit tempora magnam, perferendis non ? ."];
 
@@ -123,11 +123,11 @@ stopbtn.addEventListener("click",displayresult);
 //display random text
 
 const renderNewtext = async()=>{
-        //using javascript fetch
+       
 
         let index = Math.floor(Math.random()*text.length);
          
-        let arr = text[index].split("").map(value =>{
+        let arr = textap[index].split("").map(value =>{
         return "<span class = 'quote-chars'>"+value+"</span>";
         })
 
