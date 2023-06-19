@@ -1,5 +1,5 @@
 //randomtext
-const textapi = "https://api.quotable.io/random?minLength=420&maxLength=1000";
+const textapi = "https://api.quotable.io/random?minLength=350&maxLength=1000";
 
 const textsection = document.getElementById("textid");
 const userinput = document.getElementById("textinput");
