@@ -125,7 +125,7 @@ stopbtn.addEventListener("click",displayresult);
 const renderNewtext = async()=>{
        
 
-        let index = Math.floor(Math.random()*text.length);
+        let index = Math.floor(Math.random()*textap.length);
          
         let arr = textap[index].split("").map(value =>{
         return "<span class = 'quote-chars'>"+value+"</span>";
